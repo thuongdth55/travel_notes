@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mù Cang Chải: người và tên đất</title>
+<title>Mù Cang Chải: hoa nở trên đồi, tên đất kể chuyện người</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -66,6 +66,11 @@ details p{max-width:46em;color:var(--mut);margin:12px 0 0}
 .note{margin:0;padding-left:14px;border-left:3px solid var(--gold);color:var(--mut);font-size:15px}
 .card a{font-size:14px;color:var(--ind);font-weight:500}
 .pull{margin:4px 0 0;padding:16px 18px;border-radius:12px;background:color-mix(in srgb,var(--grn) 8%,transparent)}.pull p{margin:0}.pull .big{font-size:17px;font-weight:500;line-height:1.7}.pull .sub{margin-top:8px;font-size:15px;color:var(--mut)}
+.fig img{cursor:zoom-in}.fig:has(img)::after{content:"Phóng to";position:absolute;right:10px;bottom:10px;background:rgba(15,25,19,.65);color:#fff;font-size:12px;padding:3px 10px;border-radius:99px;pointer-events:none}
+#lb{position:fixed;inset:0;z-index:50;background:rgba(10,16,12,.94);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}#lb[hidden]{display:none}
+.lbbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 16px;color:#EEF1E8}.lbbar>span{font-weight:700;font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lbc{display:flex;gap:6px;flex:none}.lbc button{font:inherit;font-size:16px;min-width:42px;height:42px;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;cursor:pointer}
+#lbs{flex:1;min-height:0;overflow:hidden;touch-action:none;display:grid;place-items:center;cursor:grab}#lbi{max-width:100%;max-height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none;will-change:transform}
 .wide{grid-column:1/-1}
 @media(min-width:760px){.wide{flex-direction:row}.wide .fig{width:42%;aspect-ratio:auto;min-height:280px}.wide .body{padding:32px}.wide h3{font-size:28px}}
 footer{padding:32px clamp(16px,5vw,56px);color:var(--mut);font-size:14px;border-top:1px solid var(--line);text-align:center}
@@ -113,6 +118,7 @@ footer{padding:32px clamp(16px,5vw,56px);color:var(--mut);font-size:14px;border-
 <div class="grid" id="grid"></div>
 </section>
 </main>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Xem ảnh"><div class="lbbar"><span id="lbt"></span><div class="lbc"><button id="zo" aria-label="Thu nhỏ">−</button><button id="zr" aria-label="Về kích thước vừa khung">100%</button><button id="zi" aria-label="Phóng to">+</button><button id="lx" aria-label="Đóng">✕</button></div></div><div id="lbs"><img id="lbi" alt="" draggable="false"></div></div>
 
 
 <script>
@@ -124,32 +130,32 @@ d:`Gợi nhắc địa hình núi cao hiểm trở và khí hậu khắc nghiệ
 {n:"La Pán Tẩn",a:"Sáp nhập vào xã Púng Luông",l:"m",lt:"tiếng Mông",
 m:`Bắt nguồn từ tiếng Quan Hỏa (đọc chệch từ “Lão Bản Tỉnh” - 老板井), mang nghĩa là “nơi tụ họp, đầu mối giao thương của các ông chủ buôn bán”, mặt hàng là thuốc phiện`,
 d:`Hơn 20 năm trước nơi này là thủ phủ thuốc phiện, sau này cây thuốc phiện được xóa bỏ để làm ruộng bậc thang`,
-src:"https://vietnamnet.vn/la-pan-tan-khi-khong-con-thu-phu-ma-tuy-105423.html",img:"..."},
+src:"https://vietnamnet.vn/la-pan-tan-khi-khong-con-thu-phu-ma-tuy-105423.html",img:"https://luhanhvietnam.com.vn/du-lich/vnt_upload/news/05_2022/kham-pha-xa-la-pan-tan-5.jpg"},
 {n:"Trống Tông",v:1,a:"Thuộc xã La Pán Tẩn cũ",l:"m",lt:"tiếng Mông",
 m:`Trống: nghĩa là núi, dãy núi\nTông: mô tả thế núi trải dài\n=> vùng sườn núi rộng, thoai thoải hoặc nằm trên đỉnh cao`,
-d:`Những triền đồi hoa tớ dày nở rộ nhuộm hồng bản làng`,img:"..."},
+d:`Những triền đồi hoa tớ dày nở rộ nhuộm hồng bản làng`,img:"https://i.postimg.cc/4NJ7cPCY/911792887-10164615123948913-780660063650022317-n.jpg"},
 {n:"Trống Páo Sang",a:"Thuộc xã La Pán Tẩn cũ",l:"m",lt:"tiếng Mông",
-m:`Trống: nghĩa là núi, dãy núi\nPáo Sang: nghĩa là xương/hài cốt\n=> đỉnh núi cao nhất và lạnh giá bậc nhất ở khu vực La Pán Tẩn, mùa đông gió rít và thường có băng tuyết, sương muối phủ trắng xóa đỉnh đồi`,img:"..."},
+m:`Trống: nghĩa là núi, dãy núi\nPáo Sang: nghĩa là xương/hài cốt\n=> đỉnh núi cao nhất và lạnh giá bậc nhất ở khu vực La Pán Tẩn, mùa đông gió rít và thường có băng tuyết, sương muối phủ trắng xóa đỉnh đồi`,img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7WFkkPxZUzJus_UxobZyq029r6LcjG2Zbt9mTBl2vB3DA4KTkdWuGMS35&s=10"},
 {n:"Lao Chải",l:"m",lt:"tiếng Mông",
-m:`Bắt nguồn từ tiếng Quan Hỏa (đọc chệch từ “Lão Trại” - 老寨), mang nghĩa là bản làng cũ lâu đời\n=> nơi được khai phá đầu tiên, hình thành cộng đồng định cư lâu đời nhất sẽ được gọi là Lao Chải (bản cũ) để phân biệt với các bản mới lập sau này`,img:"..."},
+m:`Bắt nguồn từ tiếng Quan Hỏa (đọc chệch từ “Lão Trại” - 老寨), mang nghĩa là bản làng cũ lâu đời\n=> nơi được khai phá đầu tiên, hình thành cộng đồng định cư lâu đời nhất sẽ được gọi là Lao Chải (bản cũ) để phân biệt với các bản mới lập sau này`,img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqC4v39S8INuunHEuy4QSNd3NC2y4xuUBtvVsCCZ7TGA&s=10"},
 {n:"Háng Gằng (Háng Gàng)",v:1,a:"Thuộc xã Lao Chải",l:"m",lt:"tiếng Mông",
 m:`Háng: nghĩa là khe núi, thung lũng hoặc hẻm núi sâu. (Từ này xuất hiện rất phổ biến trong các địa danh vùng cao của người Mông như Mí Háng, Háng Đồng, Háng Tề Chơ...).\nGằng / Gàng: dùng để chỉ đặc điểm dốc đứng, cheo leo hoặc vắt ngang sườn núi.`,
-d:`Bản làng nằm chênh vênh trên sườn núi cao, tách biệt trong những khe núi sâu và dốc. Nhưng bạn yên tâm, bây giờ đường đổ bê tông to đẹp rồi, còn dốc thì nguyên xi :))`,img:"..."},
+d:`Bản làng nằm chênh vênh trên sườn núi cao, tách biệt trong những khe núi sâu và dốc. Nhưng bạn yên tâm, bây giờ đường đổ bê tông to đẹp rồi, còn dốc thì nguyên xi :))`,img:"https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/615188929_3721022991378048_6641336224112127965_n.jpg?stp=dst-jpg_tt6&cstp=mx1348x2048&ctp=s1348x2048&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cBpGMKp1H40Q7kNvwEQlO7n&_nc_oc=AdrK4Bdnu3TsWjSuWGQrlf0jaFujSUXNDyWrJbzEKVApRGM1eNOYfk51R2DkJe8BmmE&_nc_zt=23&_nc_ht=scontent.fhan18-1.fna&_nc_gid=UZ1teGqwXRqzCo9VuROTag&_nc_ss=7b2a8&oh=00_AQT3a-DcrMU9e62eE524Z-LggTRx16RqHFU1aVWGCMs_jg&oe=6B09EF5E"},
 {n:"Mồ Dề",a:"Sáp nhập vào xã Mù Cang Chải",l:"m",lt:"tiếng Mông",
 m:`Mồ: nghĩa là rừng, cây gỗ\nDề: ám chỉ cây rừng mọc dày đặc`,
-d:`Cánh rừng nguyên sinh rậm rạp với nhiều loại gỗ quý (như pơ mu, thông, dẻ...) đan xen các khe suối lớn chảy từ đỉnh núi cao xuống`,img:"..."},
+d:`Cánh rừng nguyên sinh rậm rạp với nhiều loại gỗ quý (như pơ mu, thông, dẻ...) đan xen các khe suối lớn chảy từ đỉnh núi cao xuống`,img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTC7FCpbSOTzYkMW2STnfsDIeIRGzXZZD2ES3if1ukOaFthJmpfg4GiIQ&s=10"},
 {n:"Mí Háng (Mý Háng)",v:1,a:"Thuộc xã Mồ Dề cũ",l:"m",lt:"tiếng Mông",
 m:`Bạn biết từ Háng là gì rồi đấy :))\nCòn “Mí” nghĩa là nhỏ bé`,
-d:`Khả năng là phiên bản double của Háng Gàng 😂`,img:"..."},
+d:`Khả năng là phiên bản double của Háng Gàng 😂`,img:"https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/606316228_1304374478393468_6678338687337638922_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1363&ctp=s2048x1363&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=e_Frt1jGLv4Q7kNvwGkcxKv&_nc_oc=Adq8aE_uS8a6xQmO7UrqfYbQzM65wS13_ffNGMIw4ROUwu7qLTlAP-M0wQIlKRy4Hv8&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=hTOVWamiOtsjs5_c815dVA&_nc_ss=7b289&oh=00_AQTAZbvWuXPI6UEaiaxJtLI_JTNhvVo5IktA_7LI3cDHkQ&oe=6B09F55F"},
 {n:"Sáng Nhù (chỗ có 1 cây hoa ở đồi Móng Ngựa)",v:1,a:"Thuộc xã Mồ Dề cũ",l:"m",lt:"tiếng Mông",
 m:`Sáng (hoặc Sán): chỉ vùng sườn núi cao, thoáng đãng đón ánh nắng.\nNhù: chỉ đất bằng, bãi đất rộng (hoặc dùng để gọi tên người/dòng họ đầu tiên đến khai phá khu vực này)\n=> vùng đất bằng phẳng nằm trên núi cao`,
-d:`Bản Sáng Nhù nằm ngay sát trung tâm Mù Cang Chải (chỉ cách khoảng 2 km) nhưng lại có địa thế vút cao và dốc đứng lên sườn núi, mở ra không gian thoáng rộng để đón trọn ánh nắng sớm và hoàng hôn.`,img:"..."},
+d:`Bản Sáng Nhù nằm ngay sát trung tâm Mù Cang Chải (chỉ cách khoảng 2 km) nhưng lại có địa thế vút cao và dốc đứng lên sườn núi, mở ra không gian thoáng rộng để đón trọn ánh nắng sớm và hoàng hôn.`,img:"https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/605859187_1658529795110784_325855001585655218_n.jpg?stp=dst-jpg_tt6&cstp=mx1394x2048&ctp=s1394x2048&_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=5JlCeowUI9gQ7kNvwGsJwrS&_nc_oc=AdoN6NYMEaVTB8DUFrldJGR2hIPeV1CMNTUPI1apyQtU0SPckbW9tOHPsI8bPr2xrlQ&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=jsjmeETrj5GIb7K1Q29Tmg&_nc_ss=7b2a8&oh=00_AQTNofXB74B_Tv819OTEqKAEZCOgh0RBCflkqc4JR170_g&oe=6B09E4C6"},
 {n:"Púng Luông",l:"t",lt:"tiếng Thái (hệ Tày - Thái)",
 m:`Púng: vùng đất trũng, thung lũng bằng phẳng, có thể khai khẩn làm ruộng nước.\nLuông: có nghĩa là lớn, to, rộng\n=> thung lũng lớn`,
-d:`Những thung lũng rộng lớn trải dài theo triền núi với các thửa ruộng bậc thang nối tiếp nhau`,img:"..."},
-{n:"Kim Nọi (khu home 1)",a:"Sáp nhập vào xã Mù Cang Chải",l:"t",lt:"tiếng Thái (hệ Tày - Thái)",
+d:`Những thung lũng rộng lớn trải dài theo triền núi với các thửa ruộng bậc thang nối tiếp nhau`,img:"https://file3.qdnd.vn/data/images/14/2018/11/22/tranhoai/31.jpg"},
+{n:"Kim Nọi (ảnh từ quán cafe cạnh home 1)",a:"Sáp nhập vào xã Mù Cang Chải",l:"t",lt:"tiếng Thái (hệ Tày - Thái)",
 m:`Kim (hay Khim): bắt nguồn từ tên dòng Nậm Kim – con suối lớn nhất và là mạch nguồn chính chảy dọc theo thung lũng Mù Cang Chải.\nNọi: có nghĩa là nhỏ, bé (đối lập với từ luông ở trên)\n=> Kim Nọi = “suối Kim nhỏ” hoặc “nhánh nhỏ của dòng Nậm Kim”`,
-d:`Bản làng ven các nhánh suối nhỏ`,img:"..."}
+d:`Bản làng ven các nhánh suối nhỏ`,img:"https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/611560584_1200306692291342_6627867079485444264_n.jpg?stp=dst-jpg_tt6&cstp=mx720x960&ctp=p526x296&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pCsS39yYi38Q7kNvwGTjiPw&_nc_oc=Ado1e_CxPNTJcTkW8csZNKpGEGhDsljfbbxrv-x9me31a6E4blNbSnYRvw9nQYxo2DQ&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=dDVrgzeYjwfQtHxnFXIBvg&_nc_ss=7b289&oh=00_AQTY-rHWgDc87gmKTnHR1ra8wOzHpSyIgV-jOfb3pdxmgg&oe=6B0A0302"}
 ];
 const P=P0.slice(1),M=P0[0];
 const E=[["Mông",81.24,"var(--ind)","81,24%"],["Kinh",12.8,"var(--gold)","12,8%"],["Thái",3.89,"var(--grn)","3,89%"],["Tày",1.5,"var(--teal)","1,5%"],["Các dân tộc khác",.57,"var(--gry)","0,57%"]];
@@ -172,6 +178,23 @@ function draw(){
   return `<article class="card${wide?" wide":""}"><figure class="fig"><span>Ảnh minh họa: ${p.n.split(" (")[0]}</span><img src="${p.img}" alt="${p.n}" loading="lazy" onerror="this.remove()"></figure><div class="body"><h3>${p.n}</h3><div class="tags">${p.v?'<span class="tag v">Điểm tham quan</span>':""}<span class="tag ${p.l}">${p.lt}</span>${p.a?`<span class="tag">${p.a}</span>`:""}</div><div class="mean">${lines}</div>${p.d?`<p class="note">${p.d}</p>`:""}${p.q?`<blockquote class="pull"><p class="big">${p.q[0]}</p><p class="sub">${p.q[1]}</p></blockquote>`:""}${p.src?`<a href="${p.src}" target="_blank" rel="noopener">Đọc thêm: VietNamNet</a>`:""}</div></article>`}).join("");
 }
 $("chips").addEventListener("click",e=>{const k=e.target.dataset.k;if(k){cur=k;draw()}});
+
+/* Xem ảnh phóng to */
+const lb=$("lb"),li=$("lbi"),st=$("lbs"),pts=new Map();let z=1,tx=0,ty=0,pd=0;
+const ap=()=>{li.style.transform=`translate(${tx}px,${ty}px) scale(${z})`;$("zr").textContent=Math.round(z*100)+"%"};
+const sz=n=>{z=Math.min(6,Math.max(1,n));if(z==1)tx=ty=0;ap()};
+const pdist=()=>{if(pts.size<2)return 0;const[a,b]=[...pts.values()];return Math.hypot(a[0]-b[0],a[1]-b[1])};
+function openLb(src,t){li.src=src;li.alt=t;$("lbt").textContent=t;z=1;tx=ty=0;ap();lb.hidden=false;document.documentElement.style.overflow="hidden";$("lx").focus()}
+function closeLb(){lb.hidden=true;li.removeAttribute("src");document.documentElement.style.overflow=""}
+$("grid").addEventListener("click",e=>{const i=e.target.closest(".fig img");if(i)openLb(i.src,i.alt)});
+$("lx").onclick=closeLb;$("zi").onclick=()=>sz(z*1.4);$("zo").onclick=()=>sz(z/1.4);$("zr").onclick=()=>sz(1);
+addEventListener("keydown",e=>{if(lb.hidden)return;if(e.key=="Escape")closeLb();if(e.key=="+"||e.key=="=")sz(z*1.4);if(e.key=="-")sz(z/1.4)});
+st.addEventListener("wheel",e=>{e.preventDefault();sz(z*(e.deltaY<0?1.15:1/1.15))},{passive:false});
+st.addEventListener("dblclick",()=>sz(z>1?1:2.5));
+st.addEventListener("click",e=>{if(e.target===st&&z==1)closeLb()});
+st.addEventListener("pointerdown",e=>{st.setPointerCapture(e.pointerId);pts.set(e.pointerId,[e.clientX,e.clientY]);pd=pdist()});
+st.addEventListener("pointermove",e=>{if(!pts.has(e.pointerId))return;const o=pts.get(e.pointerId);pts.set(e.pointerId,[e.clientX,e.clientY]);if(pts.size==2){const d=pdist();if(pd)sz(z*d/pd);pd=d}else if(z>1){tx+=e.clientX-o[0];ty+=e.clientY-o[1];ap()}});
+const up=e=>{pts.delete(e.pointerId);pd=pdist()};st.addEventListener("pointerup",up);st.addEventListener("pointercancel",up);
 draw();
 
 /* Vùng cao, hoa tớ dày */
