@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mù Cang Chải: người và tên đất</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF1E8;--ink:#16261C;--mut:#52625A;--card:#FBFCF8;--line:#D3DACB;--grn:#2F5D3F;--gold:#C98A12;--ind:#2C3E7A;--teal:#2F7F80;--gry:#8C998F;--sky1:#F8D9DE;--sky2:#D9E8CB;--hero:#15281D;--chip:#16261C;--chipt:#EEF1E8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1913;--ink:#E8EEE6;--mut:#9BAA9F;--card:#16241C;--line:#2A3B30;--grn:#7DBF93;--gold:#F0B84A;--ind:#8FA4E8;--teal:#62BDBE;--gry:#6F7F74;--sky1:#1B2A52;--sky2:#2B4A45;--hero:#F2EFD8;--chip:#E8EEE6;--chipt:#0F1913}}
+:root[data-theme="dark"]{--bg:#0F1913;--ink:#E8EEE6;--mut:#9BAA9F;--card:#16241C;--line:#2A3B30;--grn:#7DBF93;--gold:#F0B84A;--ind:#8FA4E8;--teal:#62BDBE;--gry:#6F7F74;--sky1:#1B2A52;--sky2:#2B4A45;--hero:#F2EFD8;--chip:#E8EEE6;--chipt:#0F1913}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth;height:100%}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Be Vietnam Pro",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:center;padding:12px clamp(16px,5vw,56px);overflow-x:auto}
+nav a{color:var(--mut);text-decoration:none;font-weight:500;font-size:15px;white-space:nowrap;flex:1;text-align:center;padding:4px 0}
+nav a:hover,nav a:focus-visible{color:var(--ink)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-start;background:linear-gradient(var(--sky1),var(--sky2));color:var(--hero);overflow:hidden}
+.hero svg{position:absolute;left:0;bottom:0;width:100%;height:55%}
+.hero>div{position:relative;z-index:1;padding:clamp(40px,9vw,110px) clamp(16px,5vw,56px) 0;max-width:900px}
+h1{font-weight:800;font-size:clamp(44px,10vw,112px);line-height:.95;letter-spacing:-.035em;margin:0 0 20px}
+.hero p{font-size:clamp(17px,2.2vw,22px);max-width:34em;margin:0 0 28px;font-weight:500}
+.btn{display:inline-block;background:var(--chip);color:var(--chipt);padding:12px 22px;border-radius:99px;font-weight:700;text-decoration:none;margin:0 8px 8px 0;font-size:15px}
+.btn.o{background:transparent;color:var(--hero);box-shadow:inset 0 0 0 2px var(--hero)}
+section{padding:clamp(48px,8vw,96px) clamp(16px,5vw,56px);max-width:1200px;margin:0 auto}
+h2{font-weight:800;font-size:clamp(28px,4.5vw,48px);line-height:1.1;letter-spacing:-.025em;margin:0 0 28px;max-width:18em}
+h3{font-size:19px;margin:0 0 8px;line-height:1.3}
+.lead{font-size:18px;color:var(--mut);max-width:44em;margin:-10px 0 32px}
+.bar{display:flex;height:56px;border-radius:14px;overflow:hidden;background:var(--line);margin:8px 0 20px}
+.bar i{display:block;width:0;transition:width 1.4s cubic-bezier(.2,.7,.2,1)}
+.bar.go i{width:var(--w)}
+.leg{list-style:none;padding:0;margin:0 0 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 28px}
+.leg li{display:flex;gap:10px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:8px}
+.leg i{width:12px;height:12px;border-radius:3px;flex:none;align-self:center}
+.leg strong{margin-left:auto;font-variant-numeric:tabular-nums}
+.leg small{color:var(--mut);display:block;margin-top:6px}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:48px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.box p{margin:0;color:var(--mut)}
+.box:nth-child(1){border-top:5px solid var(--grn)}.box:nth-child(2){border-top:5px solid var(--ind)}.box:nth-child(3){border-top:5px solid var(--gold)}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:24px;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{max-width:46em;color:var(--mut);margin:12px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chips button{font:inherit;font-weight:500;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:99px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--chip);color:var(--chipt);border-color:var(--chip)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.fig{position:relative;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,var(--line) 0 10px,transparent 10px 20px),var(--card);display:grid;place-items:center;color:var(--mut);font-size:13px;margin:0}
+.fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12.5px;font-weight:500;padding:3px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--mut)}
+.tag.m{color:var(--ind);border-color:currentColor;background:transparent}.tag.t{color:var(--grn);border-color:currentColor;background:transparent}
+.tag.v{background:var(--gold);color:#16261C;border-color:var(--gold);font-weight:700}
+.mean span{display:block}.mean b{display:block;color:var(--grn);margin-top:4px}.ar{flex:none;width:24px;height:24px;padding:4px;border-radius:50%;background:color-mix(in srgb,var(--grn) 16%,transparent)}.res{line-height:1.7}.res b{color:var(--grn)}.res .ar{vertical-align:-6px;margin-right:6px}.res .n{color:var(--mut);font-size:15px}.res .n::before{content:"";display:inline-block;width:1px;height:1em;background:var(--line);margin:0 10px 0 8px;vertical-align:-2px}
+.note{margin:0;padding-left:14px;border-left:3px solid var(--gold);color:var(--mut);font-size:15px}
+.card a{font-size:14px;color:var(--ind);font-weight:500}
+.pull{margin:4px 0 0;padding:16px 18px;border-radius:12px;background:color-mix(in srgb,var(--grn) 8%,transparent)}.pull p{margin:0}.pull .big{font-size:17px;font-weight:500;line-height:1.7}.pull .sub{margin-top:8px;font-size:15px;color:var(--mut)}
+.wide{grid-column:1/-1}
+@media(min-width:760px){.wide{flex-direction:row}.wide .fig{width:42%;aspect-ratio:auto;min-height:280px}.wide .body{padding:32px}.wide h3{font-size:28px}}
+footer{padding:32px clamp(16px,5vw,56px);color:var(--mut);font-size:14px;border-top:1px solid var(--line);text-align:center}
+.mcc{max-width:640px;padding:20px 22px;border-radius:16px;background:color-mix(in srgb,var(--bg) 80%,transparent);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:var(--ink);display:flex;flex-direction:column;gap:10px}.mcc .pull{background:none;border-top:1px solid var(--line);border-radius:0;padding:14px 0 0;margin:0}
+.petal{position:absolute;top:-6%;z-index:0;width:10px;height:14px;border-radius:80% 0 80% 0;opacity:.85;pointer-events:none;scale:var(--s);animation:fall linear infinite}@keyframes fall{from{top:-6%;transform:translateX(0) rotate(0)}to{top:104%;transform:translateX(var(--dx)) rotate(540deg)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.bar i{transition:none}.petal{display:none}}
+</style>
+</head>
+<body>
+<nav><a href="#dan-toc">Các dân tộc</a><a href="#dia-danh">Tên địa danh</a></nav>
+
+<header class="hero">
+<svg id="terr" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+<div>
+<h1>Mù Cang Chải</h1>
+<p>Ai đã đến vùng núi này trước, ai đến sau, và những cái tên nghe lạ tai ấy thật ra nói gì.</p>
+<div class="mcc" id="mcc"></div>
+</div>
+</header>
+
+<main>
+<section id="dan-toc">
+<h2>Cơ cấu và nguồn gốc các dân tộc cư trú tại Mù Cang Chải</h2>
+<p class="lead">Cơ cấu dân tộc chi tiết ở vùng này vào năm 2025:</p>
+<div class="bar" id="bar" role="img" aria-label="Biểu đồ cơ cấu dân tộc: Mông 81,24%, Kinh 12,8%, Thái 3,89%, Tày 1,5%, các dân tộc khác 0,57%"></div>
+<ul class="leg" id="leg"></ul>
+
+<div class="three">
+<div class="box"><h3>Người Thái</h3><p>Là cư dân định cư sớm ở vùng này, tập trung ở ven suối và các thung lũng, nên những vùng thấp thường đặt tên tiếng Thái như Púng Luông (thung lũng lớn), Kim Nọi (suối Kim nhỏ), Khau Phạ (sừng trời), Nậm Khắt (suối Khắt), Nậm Có (suối Có),...</p></div>
+<div class="box"><h3>Người Mông</h3><p>Di cư đến đây từ hơn 300–400 năm trước. Vùng đất thấp đã có chủ nên người Mông tiến lên khai phá vùng núi cao. Chính họ là những người đã khai khẩn sườn núi để tạo nên kỳ quan ruộng bậc thang ngày nay, đồng thời đặt tên cho vùng đất này.</p></div>
+<div class="box"><h3>Các dân tộc khác</h3><p>Người Kinh, Tày, Dao, Mường... phần lớn mới chuyển đến sinh sống và làm kinh tế trong giai đoạn sau này (đặc biệt từ sau năm 1954 và thời kỳ khai hoang vùng kinh tế mới).</p></div>
+</div>
+
+<h2 style="font-size:clamp(24px,3.4vw,36px)">Tại sao người Mông đến muộn vậy?</h2>
+<details open><summary>Cội nguồn cổ đại</summary>
+<p>Theo sử sách và dân tộc học, tổ tiên người Mông (cùng với người Dao) vốn cư trú tại vùng lưu vực sông Hoàng Hà và vùng Tam Miêu (trung lưu sông Dương Tử, Trung Quốc) từ khoảng 4.000–5.000 năm trước. Ở Trung Quốc, họ được gọi là người Miêu (Miao). Đây là lý do tại sao trước kia người Mông tại Việt Nam được gọi là người Mèo, và đổi tên thành dân tộc H’Mông (đọc là Mông) vào năm 1978 theo sự tôn trọng tên tự gọi bản địa của chính người dân tộc này (từ xa xưa, dù sống ở bất kỳ quốc gia nào, đồng bào dân tộc này vẫn luôn tự gọi mình là Mông, còn tên gọi Miêu bắt nguồn từ cách người Hán cổ đại gọi các tộc người sống ở phía Nam sống gắn bó với đất đai và nông nghiệp).</p></details>
+<details><summary>Hành trình lùi dần về phương Nam</summary>
+<p>Do các cuộc chiến tranh với người Hán từ thời cổ đại, họ liên tục bị đẩy lùi sâu vào các vùng núi hiểm trở phía Nam Trung Quốc như Quý Châu, Vân Nam, Quảng Tây. Phải đến khoảng cuối thời Minh, đầu thời Thanh ở Trung Quốc (cách đây hơn 300–400 năm), do các cuộc khởi nghĩa nông dân bị đàn áp đẫm máu cùng nạn sưu cao thuế nặng, người Mông mới vượt biên giới ồ ạt di cư sang miền Bắc Việt Nam qua nhiều đợt.</p></details>
+</section>
+
+<section id="dia-danh">
+<h2>Ý nghĩa tên các địa danh</h2>
+<p class="lead">Điểm đánh dấu “Điểm tham quan” là những nơi bạn sẽ đến trong chuyến đi.</p>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+</section>
+</main>
+<footer>Nội dung: tài liệu Du lịch MCC – Tên địa danh</footer>
+
+<script>
+/* ẢNH MINH HỌA: thay "..." ở trường img của từng địa danh bằng đường link ảnh. */
+const P0=[
+{n:"Mù Cang Chải",l:"m",lt:"tiếng Mông",
+m:`Mù nghĩa là “rừng gỗ”\nCang hay Căng nghĩa là “khô”\n“Chải” là “đất”\n=> Mù Cang Chải là “đất gỗ khô”`,
+d:`Gợi nhắc địa hình núi cao hiểm trở và khí hậu khắc nghiệt.`,q:[`Nhưng người Mông ở đây gọi vùng đất này là Xó Mồng (Xov Moos) - nghĩa là vùng đất yên bình được núi rừng bao bọc.`,`Có một khoảng cách đầy thú vị giữa cách người ngoài quan sát một vùng đất qua lăng kính địa lý và cách người trong cuộc cảm nhận quê hương bằng chiều sâu văn hóa.`],img:"..."},
+{n:"La Pán Tẩn",a:"Sáp nhập vào xã Púng Luông",l:"m",lt:"tiếng Mông",
+m:`Bắt nguồn từ tiếng Quan Hỏa (đọc chệch từ “Lão Bản Tỉnh” - 老板井), mang nghĩa là “nơi tụ họp, đầu mối giao thương của các ông chủ buôn bán”, mặt hàng là thuốc phiện`,
+d:`Hơn 20 năm trước nơi này là thủ phủ thuốc phiện, sau này cây thuốc phiện được xóa bỏ để làm ruộng bậc thang`,
+src:"https://vietnamnet.vn/la-pan-tan-khi-khong-con-thu-phu-ma-tuy-105423.html",img:"..."},
+{n:"Trống Tông",v:1,a:"Thuộc xã La Pán Tẩn cũ",l:"m",lt:"tiếng Mông",
+m:`Trống: nghĩa là núi, dãy núi\nTông: mô tả thế núi trải dài\n=> vùng sườn núi rộng, thoai thoải hoặc nằm trên đỉnh cao`,
+d:`Những triền đồi hoa tớ dày nở rộ nhuộm hồng bản làng`,img:"..."},
+{n:"Trống Páo Sang",a:"Thuộc xã La Pán Tẩn cũ",l:"m",lt:"tiếng Mông",
+m:`Trống: nghĩa là núi, dãy núi\nPáo Sang: nghĩa là xương/hài cốt\n=> đỉnh núi cao nhất và lạnh giá bậc nhất ở khu vực La Pán Tẩn, mùa đông gió rít và thường có băng tuyết, sương muối phủ trắng xóa đỉnh đồi`,img:"..."},
+{n:"Lao Chải",l:"m",lt:"tiếng Mông",
+m:`Bắt nguồn từ tiếng Quan Hỏa (đọc chệch từ “Lão Trại” - 老寨), mang nghĩa là bản làng cũ lâu đời\n=> nơi được khai phá đầu tiên, hình thành cộng đồng định cư lâu đời nhất sẽ được gọi là Lao Chải (bản cũ) để phân biệt với các bản mới lập sau này`,img:"..."},
+{n:"Háng Gằng (Háng Gàng)",v:1,a:"Thuộc xã Lao Chải",l:"m",lt:"tiếng Mông",
+m:`Háng: nghĩa là khe núi, thung lũng hoặc hẻm núi sâu. (Từ này xuất hiện rất phổ biến trong các địa danh vùng cao của người Mông như Mí Háng, Háng Đồng, Háng Tề Chơ...).\nGằng / Gàng: dùng để chỉ đặc điểm dốc đứng, cheo leo hoặc vắt ngang sườn núi.`,
+d:`Bản làng nằm chênh vênh trên sườn núi cao, tách biệt trong những khe núi sâu và dốc. Nhưng bạn yên tâm, bây giờ đường đổ bê tông to đẹp rồi, còn dốc thì nguyên xi :))`,img:"..."},
+{n:"Mồ Dề",a:"Sáp nhập vào xã Mù Cang Chải",l:"m",lt:"tiếng Mông",
+m:`Mồ: nghĩa là rừng, cây gỗ\nDề: ám chỉ cây rừng mọc dày đặc`,
+d:`Cánh rừng nguyên sinh rậm rạp với nhiều loại gỗ quý (như pơ mu, thông, dẻ...) đan xen các khe suối lớn chảy từ đỉnh núi cao xuống`,img:"..."},
+{n:"Mí Háng (Mý Háng)",v:1,a:"Thuộc xã Mồ Dề cũ",l:"m",lt:"tiếng Mông",
+m:`Bạn biết từ Háng là gì rồi đấy :))\nCòn “Mí” nghĩa là nhỏ bé`,
+d:`Khả năng là phiên bản double của Háng Gàng 😂`,img:"..."},
+{n:"Sáng Nhù (chỗ có 1 cây hoa ở đồi Móng Ngựa)",v:1,a:"Thuộc xã Mồ Dề cũ",l:"m",lt:"tiếng Mông",
+m:`Sáng (hoặc Sán): chỉ vùng sườn núi cao, thoáng đãng đón ánh nắng.\nNhù: chỉ đất bằng, bãi đất rộng (hoặc dùng để gọi tên người/dòng họ đầu tiên đến khai phá khu vực này)\n=> vùng đất bằng phẳng nằm trên núi cao`,
+d:`Bản Sáng Nhù nằm ngay sát trung tâm Mù Cang Chải (chỉ cách khoảng 2 km) nhưng lại có địa thế vút cao và dốc đứng lên sườn núi, mở ra không gian thoáng rộng để đón trọn ánh nắng sớm và hoàng hôn.`,img:"..."},
+{n:"Púng Luông",l:"t",lt:"tiếng Thái (hệ Tày - Thái)",
+m:`Púng: vùng đất trũng, thung lũng bằng phẳng, có thể khai khẩn làm ruộng nước.\nLuông: có nghĩa là lớn, to, rộng\n=> thung lũng lớn`,
+d:`Những thung lũng rộng lớn trải dài theo triền núi với các thửa ruộng bậc thang nối tiếp nhau`,img:"..."},
+{n:"Kim Nọi (khu home 1)",a:"Sáp nhập vào xã Mù Cang Chải",l:"t",lt:"tiếng Thái (hệ Tày - Thái)",
+m:`Kim (hay Khim): bắt nguồn từ tên dòng Nậm Kim – con suối lớn nhất và là mạch nguồn chính chảy dọc theo thung lũng Mù Cang Chải.\nNọi: có nghĩa là nhỏ, bé (đối lập với từ luông ở trên)\n=> Kim Nọi = “suối Kim nhỏ” hoặc “nhánh nhỏ của dòng Nậm Kim”`,
+d:`Bản làng ven các nhánh suối nhỏ`,img:"..."}
+];
+const P=P0.slice(1),M=P0[0];
+const E=[["Mông",81.24,"var(--ind)","81,24%"],["Kinh",12.8,"var(--gold)","12,8%"],["Thái",3.89,"var(--grn)","3,89%"],["Tày",1.5,"var(--teal)","1,5%"],["Các dân tộc khác",.57,"var(--gry)","0,57%"]];
+const AR=`<svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,L=t=>t.split("\n").map(l=>l.startsWith("=>")?`<b>${l}</b>`:`<span>${l}</span>`).join("");
+const $=id=>document.getElementById(id);
+$("bar").innerHTML=E.map(e=>`<i style="--w:${e[1]}%;background:${e[2]}" title="${e[0]} ${e[3]}"></i>`).join("");
+$("leg").innerHTML=E.map(e=>`<li><i style="background:${e[2]}"></i>${e[0]}<strong>${e[3]}</strong></li>`).join("").replace(/(Các dân tộc khác.*?)<\/li>/,"$1</li>")+`<li style="grid-column:1/-1;border:0;color:var(--mut);font-size:14px">Còn lại gồm các dân tộc Mường, Nùng, Dao, Khơ Mú, Cao Lan, Sán Dìu, Gia Rai (tổng cộng 0,57%).</li>`;
+const bar=$("bar"),go=()=>bar.classList.add("go");
+try{new IntersectionObserver((a,o)=>{if(a[0].isIntersecting){go();o.disconnect()}},{threshold:.4}).observe(bar)}catch(e){go()}
+setTimeout(()=>{if(!bar.classList.contains("go")&&bar.getBoundingClientRect().top<innerHeight)go()},600);
+
+const F=[["all","Tất cả",()=>1],["v","Điểm tham quan",p=>p.v],["m","Tiếng Mông",p=>p.l=="m"],["t","Tiếng Thái",p=>p.l=="t"]];
+let cur="all";
+function draw(){
+ $("chips").innerHTML=F.map(f=>`<button aria-pressed="${f[0]==cur}" data-k="${f[0]}">${f[1]} (${P.filter(f[2]).length})</button>`).join("");
+ const f=F.find(x=>x[0]==cur)[2];
+ $("grid").innerHTML=P.filter(f).map(p=>{
+  const wide=false;
+  const lines=L(p.m);
+  return `<article class="card${wide?" wide":""}"><figure class="fig"><span>Ảnh minh họa: ${p.n.split(" (")[0]}</span><img src="${p.img}" alt="${p.n}" loading="lazy" onerror="this.remove()"></figure><div class="body"><h3>${p.n}</h3><div class="tags">${p.v?'<span class="tag v">Điểm tham quan</span>':""}<span class="tag ${p.l}">${p.lt}</span>${p.a?`<span class="tag">${p.a}</span>`:""}</div><div class="mean">${lines}</div>${p.d?`<p class="note">${p.d}</p>`:""}${p.q?`<blockquote class="pull"><p class="big">${p.q[0]}</p><p class="sub">${p.q[1]}</p></blockquote>`:""}${p.src?`<a href="${p.src}" target="_blank" rel="noopener">Đọc thêm: VietNamNet</a>`:""}</div></article>`}).join("");
+}
+$("chips").addEventListener("click",e=>{const k=e.target.dataset.k;if(k){cur=k;draw()}});
+draw();
+
+/* Đồi hoa tớ dày */
+let rs=7;const R=()=>(rs=rs*16807%2147483647)/2147483647;
+const H=["#7BA56B","#6A9660","#58854F","#477443","#38623A"],K=["#F4A9C3","#EE8FB2","#F9CADB","#FFF0F5","#E57BA3"];let s="";
+for(let i=0;i<5;i++){const y=80+i*46,a=12+i*4,ys=[];let d=`M0 ${y}`;for(let x=0;x<=1200;x+=30){const v=y+Math.sin(x/110+i*2.1)*a;ys.push(v);d+=`L${x} ${v.toFixed(1)}`}
+s+=`<path d="${d}L1200 300L0 300Z" fill="${H[i]}"/>`;
+for(let n=0;n<170;n++){const x=R()*1200,b=ys[Math.round(x/30)],cy=b+3+R()*44;s+=`<circle cx="${x.toFixed(0)}" cy="${cy.toFixed(0)}" r="${(2+R()*2.6).toFixed(1)}" fill="${K[Math.floor(R()*5)]}" fill-opacity=".92"/>`}}
+$("terr").innerHTML=s;
+const hero=document.querySelector(".hero");
+for(let i=0;i<16;i++){const p=document.createElement("i");p.className="petal";p.style.cssText=`left:${(R()*100).toFixed(0)}%;background:${K[Math.floor(R()*4)]};--s:${(.7+R()*.8).toFixed(2)};--dx:${Math.round((R()-.3)*140)}px;animation-duration:${(9+R()*9).toFixed(1)}s;animation-delay:-${(R()*16).toFixed(1)}s`;hero.appendChild(p)}
+$("mcc").innerHTML=`<div class="tags"><span class="tag m">${M.lt}</span></div><div class="mean">${L(M.m.slice(0,M.m.lastIndexOf("\n")))}</div><div class="res">${L(M.m.slice(M.m.lastIndexOf("\n")+1))}<span class="n">${M.d}</span></div><blockquote class="pull"><p class="big">${M.q[0]}</p><p class="sub">${M.q[1]}</p></blockquote>`;
+</script>
+</body>
+</html>
